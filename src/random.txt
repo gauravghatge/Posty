@@ -1,0 +1,21 @@
+   const [auth,setAuth]=useState({isLogged:false})
+    const [user,setUser]=useState({user:null})
+    firebase.auth().onAuthStateChanged(user=>{
+        if(user){
+            setAuth({isLogged:true})
+            setUser(user) 
+        }
+        else{
+            setAuth({isLogged:false})
+            setUser({user:null})
+        }
+    })
+    const LogIn=({Email,Password})=>{
+        firebase.auth().signInWithEmailAndPassword({email:Email,password:Password}).then(
+            user=>{
+                setAuth({isLogged:true})
+                setUser(user)
+            }
+        ).catch(err=>{
+            console.log(err)
+        })
