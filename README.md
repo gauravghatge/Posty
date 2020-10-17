@@ -1,5 +1,5 @@
 
-This is Social Media APP created with React JS and Firebase the base idea of the project is post wall where you can post anyhting but cannot delete or undo it so it remains there forever .
+This is Social Media APP created with React JS and Firebase the base idea behind this project is post wall where you can post anyhting but cannot delete or undo it so it remains there forever just like writing on the Wall.
 
 Live Project Link: https://posty-e7494.firebaseapp.com/
 
